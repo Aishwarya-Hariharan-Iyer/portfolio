@@ -1,10 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
-import { AppBar } from '@mui/material'
+import About from './components/About'
+import Contact from './components/Contact'
+import Experience from './components/Experience'
 
 function App() {
-
+<div>
+<About/>
+<Experience/>
+<Contact/>
+</div>
 }
 
 export default App

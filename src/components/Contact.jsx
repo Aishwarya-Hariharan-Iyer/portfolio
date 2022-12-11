@@ -1,6 +1,6 @@
 import { Parallax } from 'react-parallax';
-import Clouds from 'src/assets/clouds.jpg'
-const About = () => (
+import Clouds from '../images/clouds.jpg'
+const Contact = () => (
     <Parallax className='image' blur={0} bgImage={Clouds} strength={800} bgImageStyle={{minHeight:"100vh"}}>
         <div className='content'>
             <span className="img-txt">CONTACT ME</span>
@@ -8,4 +8,4 @@ const About = () => (
     </Parallax>
 );
 
-export default ImageOne
+export default Contact
