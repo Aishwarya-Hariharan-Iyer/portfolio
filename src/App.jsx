@@ -4,11 +4,13 @@ import Contact from './components/Contact'
 import Experience from './components/Experience'
 
 function App() {
-<div>
-<About/>
-<Experience/>
-<Contact/>
-</div>
+    return (
+        <div>
+          <About />
+          <Contact />
+          <Experience />
+        </div>
+      );
 }
 
 export default App
