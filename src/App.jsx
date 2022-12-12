@@ -7,10 +7,15 @@ import Projects from './components/projects';
 function App() {
     return (
         <div>
+          <p></p>
           <About />
+          <p></p>
           <Milestone />
+          <p></p>
           <Experience/>
+          <p></p>
           <Projects/>
+          <p></p>
           <Contact />
         </div>
       );
