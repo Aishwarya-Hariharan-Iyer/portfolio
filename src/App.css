@@ -1,4 +1,4 @@
-/* Custom Font */
+/************ Custom Font ************/
 @font-face {
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Bold.ttf');
@@ -15,7 +15,7 @@
 	font-weight: 400;
 }
 
-/* Default Css */
+/************ Default Css ************/
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +31,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #000 !important;
+  background-color: #000000 !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
 }
@@ -92,7 +92,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #000000;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
@@ -239,6 +239,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
