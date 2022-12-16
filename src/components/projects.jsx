@@ -9,8 +9,7 @@ import workImg from "../assets/img/workexp-bg.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import { IconButton } from "@mui/material";
-import { Github } from "react-bootstrap-icons";
+
 
 
 export const Projects = () => {
@@ -111,7 +110,7 @@ export const Projects = () => {
                       <Nav.Link eventKey="second">Work Experience</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Resume</Nav.Link>
+                      <Nav.Link eventKey="third">Know More</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -144,11 +143,12 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>While I hope you have glimpsed at the footsteps behind, I wish to share more of my journey with you! Head over to my Resume or to my Personal Statement to get to know me better.</p>
-                      <Row xs='4' sm='4' md='4' lg='4' xl='4' xxl='4'>
-                        <p>
-                          <Button variant="outlined">LOL</Button>
-                        </p>
+                      <Row xs='1' sm='1' md='1' lg='1' xl='1' xxl='1'>
+                      <p>While I hope you have glimpsed at the footsteps behind, I wish to share more of my journey with you! Head over to my Resume to get to know me better.</p>
+                      <button onClick={() => window.open('https://drive.google.com/file/d/1cjeZNZI_RDkuGDf2zFqC7-WVs2oNAMsJ/view?usp=sharing')}>
+                        <h5 style={{ color: 'white' }}>Resume</h5>
+                        </button>
+                      
                       </Row>
                     </Tab.Pane>
                   </Tab.Content>
