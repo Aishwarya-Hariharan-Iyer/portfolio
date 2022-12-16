@@ -1,12 +1,17 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col, Tab, Nav, Button } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import { WorkCard } from "./WorkCard";
 import projImg1 from "../assets/img/modplanus.png";
 import projImg2 from "../assets/img/devenable.png";
 import projImg3 from "../assets/img/dukeaemon.png";
 import projImg4 from "../assets/img/prism.png";
+import workImg from "../assets/img/workexp-bg.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { IconButton } from "@mui/material";
+import ContactPageIcon from '@mui/icons-material/ContactPage';
+import DescriptionIcon from '@mui/icons-material/Description';
 
 export const Projects = () => {
 
@@ -40,6 +45,51 @@ export const Projects = () => {
     },
   ];
 
+  const jobs = [
+    {
+      imgUrl: workImg,
+      role: "Software Development Intern",
+      company: "Ashok Leyland",
+      description: "Worked with the Business Analytics Team to automate generation of reports with an estimated increase in efficiency by 8-10 man-days. \nInvolved in development of the PRISM Software at all stages and coded primarily in Python",
+      infoLink: "https://www.ashokleyland.com/in/en/about-us"
+    }, 
+    {
+      imgUrl: workImg,
+      role: "Student Developer",
+      company: "Source Academy",
+      description: "Worked in the Game Development Team of Source Academy to make changes that incentivize gameplay in learning to code. \nExplored ways to introduce programming in gameplay and coded mainly in TypeScript and JavaScript",
+      infoLink: "https://about.sourceacademy.org/"
+    },
+    {
+      imgUrl: workImg,
+      role: "Research Intern",
+      company: "Amrita Vishwa Vidyapeetham",
+      description: "Analyzed Bangalore's COVID-19 database to monitor the spread of the pandemic and developed skills in data analysis using MATLAB and Excel. \n3rd author of first-prize winning paper aimed at improving conservation strategies using GIS system",
+      infoLink: "https://www.amrita.edu/about/"
+    },
+    {
+      imgUrl: workImg,
+      role: "Research Intern",
+      company: "CEiBa Trust",
+      description: "Documented nutritional values of wild, uncultivated food crops and acquired literature review and data entry skills. \nWrote 'Science Snippets' for organization's newsletters and sharpened science communication skills",
+      infoLink: "https://ceibatrust.org/"
+    },
+    {
+      imgUrl: workImg,
+      role: "NUSC Peer Mentor",
+      company: "NUS",
+      description: "Guided and mentored incoming Year 1 students enrolled in the School of Computing and NUSC/USP.",
+      infoLink: "https://nus.edu.sg/osa/pioneerhouse/residential-life/peer-mentorship-programme"
+    },
+    {
+      imgUrl: workImg,
+      role: "Chief Editor",
+      company: "Salt and Sugar Magazine",
+      description: "Founded and headed an e-magazine that aimed to be a platform for creative catharis during the pandemic.",
+      infoLink: "https://saltandsugarmagazine.wixsite.com/website"
+    },
+  ];
+
   return (
     <section className="project" id="project">
       <Container>
@@ -48,23 +98,25 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h2>Glimpses</h2>
+                <p>
+                From my time working in the Game Development Team at Source Academy to building a module planner with my teammate, every opportunity that I have been given has been an incredible learning experience for me. Each experience has enriched my coding skills through the use of Java, Python, JavaScript, and React, amongst others, strengthened my knowledge of various software designs and architectures, and enhanced my collaboration and communication abilities.
+                </p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first" fluid={true}>
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
                       <Nav.Link eventKey="first">Projects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Resume</Nav.Link>
+                      <Nav.Link eventKey="second">Work Experience</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Contact Me</Nav.Link>
+                      <Nav.Link eventKey="third">Resume</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                      <Row xs='4' sm='4' md='4' lg='4' xl='4' xxl='4'>
+                    <Row xs='4' sm='4' md='4' lg='4' xl='4' xxl='4'>
                         {
                           projects.map((project, index) => {
                             return (
@@ -77,11 +129,22 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="second">
+                    <Row xs='4' sm='4' md='4' lg='4' xl='4' xxl='4'>
+                        {
+                          jobs.map((job, index) => {
+                            return (
+                              <WorkCard
+                                key={index}
+                                {...job}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>While I hope you have glimpsed at the footsteps behind, I wish to share more of my journey with you! Head over to my Resume or to my Personal Statement to get to know me better.</p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
