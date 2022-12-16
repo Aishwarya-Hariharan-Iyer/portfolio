@@ -10,8 +10,8 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { IconButton } from "@mui/material";
-import ContactPageIcon from '@mui/icons-material/ContactPage';
-import DescriptionIcon from '@mui/icons-material/Description';
+import { Github } from "react-bootstrap-icons";
+
 
 export const Projects = () => {
 
@@ -50,42 +50,42 @@ export const Projects = () => {
       imgUrl: workImg,
       role: "Software Development Intern",
       company: "Ashok Leyland",
-      description: "Worked with the Business Analytics Team to automate generation of reports with an estimated increase in efficiency by 8-10 man-days. \nInvolved in development of the PRISM Software at all stages and coded primarily in Python",
+      description: "Worked with the Business Analytics Team to automate generation of reports with an estimated increase in efficiency by 8-10 man-days",
       infoLink: "https://www.ashokleyland.com/in/en/about-us"
     }, 
     {
       imgUrl: workImg,
       role: "Student Developer",
       company: "Source Academy",
-      description: "Worked in the Game Development Team of Source Academy to make changes that incentivize gameplay in learning to code. \nExplored ways to introduce programming in gameplay and coded mainly in TypeScript and JavaScript",
+      description: "Worked in the Game Development Team of Source Academy to make changes that incentivize gameplay in learning to code.",
       infoLink: "https://about.sourceacademy.org/"
     },
     {
       imgUrl: workImg,
       role: "Research Intern",
       company: "Amrita Vishwa Vidyapeetham",
-      description: "Analyzed Bangalore's COVID-19 database to monitor the spread of the pandemic and developed skills in data analysis using MATLAB and Excel. \n3rd author of first-prize winning paper aimed at improving conservation strategies using GIS system",
+      description: "Analyzed Bangalore's COVID-19 database to monitor the spread of the pandemic and developed skills in data analysis using MATLAB and Excel",
       infoLink: "https://www.amrita.edu/about/"
     },
     {
       imgUrl: workImg,
       role: "Research Intern",
       company: "CEiBa Trust",
-      description: "Documented nutritional values of wild, uncultivated food crops and acquired literature review and data entry skills. \nWrote 'Science Snippets' for organization's newsletters and sharpened science communication skills",
+      description: "Documented nutritional values of wild, uncultivated food crops and wrote in organization's newsletters",
       infoLink: "https://ceibatrust.org/"
     },
     {
       imgUrl: workImg,
       role: "NUSC Peer Mentor",
       company: "NUS",
-      description: "Guided and mentored incoming Year 1 students enrolled in the School of Computing and NUSC/USP.",
+      description: "Guided and mentored incoming Year 1 students enrolled in the School of Computing and NUSC/USP",
       infoLink: "https://nus.edu.sg/osa/pioneerhouse/residential-life/peer-mentorship-programme"
     },
     {
       imgUrl: workImg,
       role: "Chief Editor",
       company: "Salt and Sugar Magazine",
-      description: "Founded and headed an e-magazine that aimed to be a platform for creative catharis during the pandemic.",
+      description: "Founded and headed an e-magazine that aimed to be a platform for creative catharis during the pandemic",
       infoLink: "https://saltandsugarmagazine.wixsite.com/website"
     },
   ];
@@ -145,6 +145,9 @@ export const Projects = () => {
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <p>While I hope you have glimpsed at the footsteps behind, I wish to share more of my journey with you! Head over to my Resume or to my Personal Statement to get to know me better.</p>
+                      <IconButton>
+                        <Github/>
+                      </IconButton>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

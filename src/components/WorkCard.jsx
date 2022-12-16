@@ -6,18 +6,19 @@ export const WorkCard = ({ role, company, description, imgUrl, infoLink}) => {
 
   return (
     <Col size={16} sm={6} md={4}>
-         <div className="proj-imgbx">
+      <div className="proj-imgbx">
         <img src={imgUrl}/>
-        <div className="proj-txtx"></div>
         <div className="proj-txtx">
-          <h4>{role}</h4>
-          <h5><i>{company}</i></h5>
-          <br></br>
+          <h5>{role}</h5>
+          <h6><i>{company}</i></h6>
           <span>{description}</span>
-          </div>
+          <br></br>
+          <span>
           <IconButton onClick = {() => window.open(infoLink)}>
             <InfoIcon />
           </IconButton>
+          </span>
+        </div>
       </div>
     </Col>
   )
