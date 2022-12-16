@@ -145,9 +145,11 @@ export const Projects = () => {
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <p>While I hope you have glimpsed at the footsteps behind, I wish to share more of my journey with you! Head over to my Resume or to my Personal Statement to get to know me better.</p>
-                      <IconButton>
-                        <Github/>
-                      </IconButton>
+                      <Row xs='4' sm='4' md='4' lg='4' xl='4' xxl='4'>
+                        <p>
+                          <Button variant="outlined">LOL</Button>
+                        </p>
+                      </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
