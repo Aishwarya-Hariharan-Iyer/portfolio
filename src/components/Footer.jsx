@@ -1,7 +1,7 @@
 import GitHub from "@mui/icons-material/GitHub";
 import { IconButton } from "@mui/material";
 import { Container, Row, Col } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
+import logo from "../assets/img/logo.png";
 import navIcon1 from '../assets/img/mail.svg';
 import navIcon2 from '../assets/img/linkedin.svg';
 import navIcon3 from '../assets/img/github.svg';
@@ -12,7 +12,7 @@ export const Footer = () => {
       <Container>
         <Row className="align-items-center">
           <Col size={12} sm={6}>
-            <img src={logo} alt="Logo" />
+             <a href="#"><img src={logo} alt="Icon" /></a>
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <br></br>

@@ -62,7 +62,7 @@ export const Banner = () => {
                     You may find me pouring coffee and pouring over a project at 4 P.M or a poem at 4 A.M., but regardless of where you find me, you shall always find me passionate
                     about <b>creativty that contributes to a cause</b>.
                   </p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
               </div>}
             </TrackVisibility>
           </Col>
